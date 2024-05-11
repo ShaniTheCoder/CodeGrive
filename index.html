@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGrive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   
+</head>
+
+<body>
+
+    <nav class="nav">
+        <img src="assets/images/logo.png" alt="Logo" width="50px">
+        <div>
+            <a href="#home" class="link purples">Home</a>
+            <a href="#article" class="link purples">articles</a>
+            <a href="#" class="link purples" onclick="document.getElementById('videos').showModal();document.getElementById('videos').style.display = 'block'">videos</a>
+            <a href="#" class="link purples" onclick="document.getElementById('socialLinks').showModal();document.getElementById('socialLinks').style.display = 'flex'">Links</a>
+        </div>
+
+    </nav> 
+   
+    <dialog id="socialLinks">
+        <h1 id="link" style="font-family:'Rocher';">About</h1>
+        <h2>welcome to codegrive</h2>
+        <p>At CodeGrive, I share articles on computer science and programming. I'm dedicated to providing unique and valuable
+        content to help you on your coding journey. Additionally, I create related videos on my YouTube channel.</p>
+        <h2 style="font-family:'Rocher';" class="mint">Connect With Me:</h2>
+        <div>
+            <a href="https://www.youtube.com/@codegrive"> <img src="assets/svg/youtube.svg" alt="youtube" height="20px"
+                    width="90px"></a>
+            <a href="https://twitter.com/codegrive"> <img src="assets/svg/x.svg" alt="twitter"></a>
+            <a href="https://github.com/shanithecoder"><img src="assets/svg/github.svg" alt="github"></a>
+        
+        </div>
+        <button onclick="document.getElementById('socialLinks').style.display = 'none';document.getElementById('socialLinks').close();">Close</button>
+    </dialog>
+    <dialog id="videos">
+        <h1 id="video" style="font-family:'Rocher';" class="grays">Videos</h1>
+        <p>view more video on <a href="https://youtube.com/@codegrive/videos"><img src="assets/svg/youtube.svg"
+                    alt="youtube"></a></p>
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/gOQMH7OCO_Y?si=n5828nwmtYqvNgAT"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vyZZZcpomjE?si=DTKE5mjGE-KL95G2"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        </div>
+        <button class="button">View more YouTube</button> 
+        <button onclick="document.getElementById('videos').style.display = 'none';document.getElementById('videos').close();" class="button">Close</button>
+    </dialog>
+    <section class="section-1" id="home">
+  
+        <div>
+            <h1><span class="mint">Wel</span><span>come</span></h1>
+            <h1><span>T</span><span class="mint">o</span></h1>
+            <h1><span class="mint">Code</span><span>Grive</span></h1>
+        </div>
+    </section>
+   
+    <section class="section-3">
+        <h1 id="article"  style="font-family:'Rocher';" class="grays">Articles</h1>
+        <div class="art">
+            <div>
+                <h1>Your Main Idea Goes Here</h1>
+                <p>There is just enough space here for several lines of text. You can add details, share a quick story,
+                    or elaborate on an
+                    idea, as long as you keep the information engaging and relevant. For maximum impact, make sure you
+                    get your message
+                    across clearly yet concisely.</p>
+            </div>
+            <button class="button">ReadMore</button>
+        </div>
+        <div class="art">
+            <div>
+                <h1 >Your Main Idea Goes Here</h1>
+                <p>There is just enough space here for several lines of text. You can add details, share a quick story,
+                    or elaborate on an
+                    idea, as long as you keep the information engaging and relevant. For maximum impact, make sure you
+                    get your message
+                    across clearly yet concisely.</p>
+            </div>
+            <button class="button">ReadMOre</button>
+        </div>
+
+    </section>
+    
+</body>
+
+</html>

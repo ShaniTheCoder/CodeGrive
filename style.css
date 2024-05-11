@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --palette-dark: #111d29;
+  --palette-primary: #6b8697;
+  --palette-secondary: #09B3E4;
+  --palette-border: #1a1a1a;
+  --palette-accent: #007bff;
+  --palette-card-bg: rgba(17, 25, 40, 0.75);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+}
+body {
+  background-color:var(--palette-dark);
+}
+
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+@font-palette-values --Grays {
+  font-family: Rocher;
+  base-palette: 9;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.grays {
+  font-palette: --Grays;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+.mint {
+  font-palette: --Mint;
+}
+
+/* Navigation css */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--palette-primary);
+  padding: 6px 10px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+.nav.scrolled{
+  background-color: white;
+}
+.link {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  margin: 8px 8px;
+}
+.nav div {
+  margin-right: 0.8%;
+}
+.nav div a{
+  font-family: 'Rocher';
+}
+section{
+  height: 100vh;
+}
+/* section one styling */
+.section-1 {
+  background: url("assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.section-1 h1 span {
+  font-family: Rocher;
+}
+.section-1 div h1 {
+  font-size: 8vw;
+}
+.section-3{
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+.section-3>h1{
+  font-family: 'Rocher';
+}
+.section-3 .art{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-3 .art>div{
+  width: 80%;
+}
+#videos div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#videos iframe{
+margin: 15px 20px 20px 10px;
+}
+#videos img{
+  height: 20px;
+    width: 90px;
+    margin-left: 10px;
+}
+/* section four styling */
+#videos div a img{
+  height: 35px;
+
+}
+#videos div a{
+  margin: 10px;
+}
+
+.button{
+    padding: 5px 18px;
+    font-family: 'Rocher';
+    font-weight: 600;
+    background: var(--palette-secondary);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var( --palette-primary); 
+}
+
+
+::-webkit-scrollbar-thumb {
+  /* background: #6B8697; */
+  background: var(--palette-dark);
+  border-radius: 10px;
+}
+
+ 
+dialog {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--palette-dark);
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  /* display: flex; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+
+}
+
+dialog h1 {
+  margin-top: 0;
+}
+
+
+dialog button {
+  background-color: var(--palette-accent);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Style for the dialog close button on hover */
+dialog button:hover {
+  background-color: var(--palette-dark);
+}
+dialog div a img{
+  height: 35px;
+
+}
+dialog div a{
+  margin: 10px;
+}
+@media only screen and (max-width: 700px) {
+ 
+  .section-3{
+    text-align: center;
+  }  
+  .section-3>div{
+    margin:10px;
+  }
+  .section-3>div>div>h1{
+    font-size: 1.5em;
+  }
+  .section-3>div>div>p{
+    font-size: 0.8em;
+  }
+  .section-3 .art{
+      flex-direction: column;
+    }
+}
+@media only screen and (max-width: 360px){
+  .nav>img{
+    display: none;
+  }
+  .nav div{
+   margin:auto;
+  }
+}
+@media only screen and (max-width: 1060px){
+  .section-1{
+    height: 100%;
+   background: linear-gradient(241deg, rgba(48,35,174,1) 0%, rgba(255,0,153,1) 100%);;
+  }
+  .nav{
+    position:sticky;
+  }
+}
