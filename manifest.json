@@ -1,7 +1,7 @@
 {
     "name": "CodeGrive",
     "short_name": "CG",
-    "start_url": "/",
+    "start_url": "/CodeGrive",
     "display": "standalone",
     "theme_color": "#111d29",
     "background_color": "#1a1a1a",
