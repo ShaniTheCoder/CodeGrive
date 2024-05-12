@@ -18,7 +18,7 @@
 body {
   background-color:var(--palette-dark);
 }
-
+ 
 @font-face {
   font-family: "Rocher";
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
@@ -61,6 +61,7 @@ body {
   width: 100%;
   position: fixed;
   z-index: 1;
+  font-size:12px;
 }
 .nav.scrolled{
   background-color: white;
@@ -217,7 +218,7 @@ dialog div a{
   margin: 10px;
 }
 @media only screen and (max-width: 700px) {
- 
+   
   .section-3{
     text-align: center;
   }  
