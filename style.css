@@ -82,8 +82,9 @@ section{
 }
 /* section one styling */
 .section-1 {
-  background: url("assets/images/background.png");
+  background: url("assets/images/background.webp");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100%;
   text-align: center;
   display: flex;
@@ -240,10 +241,34 @@ dialog div a{
    margin:auto;
   }
 }
+@-webkit-keyframes Gradient {
+    0%{background-position:0% 26%}
+    50%{background-position:100% 75%}
+    100%{background-position:0% 26%}
+}
+@-moz-keyframes Gradient {
+    0%{background-position:0% 26%}
+    50%{background-position:100% 75%}
+    100%{background-position:0% 26%}
+}
+@keyframes Gradient {
+    0%{background-position:0% 26%}
+    50%{background-position:100% 75%}
+    100%{background-position:0% 26%}
+}
 @media only screen and (max-width: 1060px){
+  .section-1 div h1{
+    font-size: 2.4em;
+  }
+ 
+  
   .section-1{
-    height: 100%;
-   background: linear-gradient(241deg, rgba(48,35,174,1) 0%, rgba(255,0,153,1) 100%);;
+    height: 80vh;
+   /* background: linear-gradient(241deg, rgba(48,35,174,1) 0%, rgba(255,0,153,1) 100%);; */
+   background: linear-gradient(140deg, rgba(48,35,174,1) 0%, rgba(255,0,153,1) 100%);;
+    -webkit-animation: Gradient 19s ease infinite;
+    -moz-animation: Gradient 19s ease infinite;
+    animation: Gradient 19s ease infinite;
   }
   .nav{
     position:sticky;
