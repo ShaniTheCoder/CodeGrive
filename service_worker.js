@@ -1,3 +1,4 @@
+// Service worker code (sw.js)
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
     '/',
@@ -24,3 +25,16 @@ self.addEventListener('fetch', event => {
             })
     );
 });
+
+// Service worker registration (main script)
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/CodeGrive/sw.js', { scope: '/CodeGrive/' })
+            .then(registration => {
+                console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(error => {
+                console.error('Service Worker registration failed:', error);
+            });
+    });
+}
