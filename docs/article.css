@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+   
+}
+
+:root {
+    --palette-dark: #111d29;
+    --palette-primary: #6b8697;
+    --palette-secondary: #09B3E4;
+    --palette-border: #1a1a1a;
+    --palette-accent: #007bff;
+    --palette-card-bg: rgba(17, 25, 40, 0.75);
+  }
+body {
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+background-color: var(--palette-primary);
+color: #f4f4f9;
+}
+
+header {
+background-color: var(--palette-secondary);
+color: white;
+padding: 20px 0;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+margin: 0;
+font-size: 2.5em;
+}
+
+main {
+max-width: 800px;
+margin: 30px auto;
+padding: 20px;
+background-color: var(--palette-dark);
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+margin-bottom: 20px;
+}
+
+h2 {
+color: #007BFF;
+margin-bottom: 10px;
+}
+
+h3 {
+color: #0056b3;
+margin-top: 20px;
+}
+
+p, ul, pre {
+margin-bottom: 20px;
+}
+
+ul {
+padding-left: 20px;
+}
+
+code {
+background-color: var(--palette-border);
+padding: 2px 4px;
+border-radius: 3px;
+}
+
+pre {
+background-color: var(--palette-border);
+padding: 15px;
+border-radius: 5px;
+overflow-x: auto;
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.intro, .conclusion {
+font-size: 1.1em;
+line-height: 1.8;
+}
+
+.article {
+padding-bottom: 10px;
+border-bottom: 1px solid #ddd;
+}
+
+.article:last-child {
+border-bottom: none;
+}
+
+button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007BFF;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+.return-home {
+text-align: center;
+margin: 20px 0;
+}
+
+ 
+.home-button {
+    position: fixed;  
+    bottom: 20px;    
+    right: 20px;     
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+ 
+footer div a img{
+    height: 35px;
+}
+     footer{
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--palette-dark);
+   
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+     }
+
+     footer div a {
+        margin-right: 10px;
+     }
+
+     @media only screen and (max-width: 610px){
+        header h1{
+            font-size: 1.5em;
+        }
+     }
