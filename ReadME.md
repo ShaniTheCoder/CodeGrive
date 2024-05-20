@@ -25,7 +25,7 @@ Codegrive is a platform featuring articles and videos about various programming 
 
 ### Videos
 
-Our video content includes tutorials and in-depth programming explanations. Check out our [YouTube channel](https://www.youtube.com/channel/UCL6OzXcdjydg5CwSV9t0ZdA) for more.
+Our video content includes tutorials and in-depth programming explanations. Check out our [YouTube channel](https://www.youtube.com/channel/@codegrive) for more.
 
 
 
