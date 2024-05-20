@@ -119,6 +119,10 @@ section{
 .section-3 .art>div{
   width: 80%;
 }
+/* #videos{
+  height: 80vh;
+  width: 80vh;
+} */
 #videos div{
     display: flex;
     flex-wrap: wrap;
@@ -220,7 +224,7 @@ dialog div a{
   margin: 10px;
 }
 @media only screen and (max-width: 700px) {
-   
+
   .section-3{
     text-align: center;
   }  
@@ -261,6 +265,10 @@ dialog div a{
     100%{background-position:0% 26%}
 }
 @media only screen and (max-width: 1060px){
+  #videos{
+    height: 80vh;
+    width: 80vh;
+  }
   .section-1 div h1{
     font-size: 2.4em;
   }
