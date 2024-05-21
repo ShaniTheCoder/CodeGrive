@@ -19,9 +19,7 @@ Codegrive is a platform featuring articles and videos about various programming 
 
 ### Articles
 
-- Programming languages (e.g., C vs. C++)
-- Development best practices
-- Data structures and algorithms
+- [Difference Between C and C++](https://shanithecoder.github.io/codegrive/docs/Diff_C_Cpp.html)
 
 ### Videos
 
