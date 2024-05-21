@@ -25,7 +25,7 @@ Codegrive is a platform featuring articles and videos about various programming 
 
 ### Videos
 
-Our video content includes tutorials and in-depth programming explanations. Check out our [YouTube channel](https://www.youtube.com/channel/@codegrive) for more.
+Our video content includes tutorials and in-depth programming explanations. Check out our [YouTube channel](https://www.youtube.com/@codegrive) for more.
 
 
 
@@ -37,7 +37,8 @@ Codegrive is licensed under the CC0 1.0 Universal (CC0 1.0). See the [LICENSE](L
 
 For questions, suggestions, or feedback:
 
-- **Email**: shanithecoder@example.com
+- **Email**: shanithecoder@gmail.com
+- **X(formerly twitter)** : [codegrive](https://x.com/codegrive) 
 - **GitHub Issues**: [Submit an issue](https://github.com/shanithecoder/codegrive/issues)
 
 Thank you for visiting Codegrive!
