@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="In this article, I explain how to instal and setup wsl/wsl2.">
+    <meta name="keywords" content="wsl,wsl2,windows Subsystem for linux,widows ,linux,web developer,developer,code,programming languages,programming,codegrive">
+    <title>How to setup WSL/WSL2</title>
+    <link rel="stylesheet" href="article.css">
+</head> 
+<body>
+    <header>
+        <h1 class="head">Setup WSL/WSL2</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>In this article, I explain how to setup <abbr title="Windows Subsystem for Linux">WSL/WSL2</abbr> using most simple methods.</p>
+            <p>WSL can be setup using either GUI or CLI</p>
+        </section>
+
+        <section class="origin article">
+            <h2>What is WSL/WSL2 ?</h2>
+            <p>WSL stands for Windows Subsystem for Linux and does exactly what it says. WSL lets developer use full power of linux with dual booting or virtual machines</p>
+            <p>WSl allows developer to use Linux on top of windows, WSL installs whole linux file system on windows.</p>
+            <p>Required Windows version</p>
+            <ul>
+                <li>windows 10 or above<i>
+            </ul>
+        </section>
+
+        <section class="programming-paradigm article">
+            <h2>GUI setup</h2>
+            <p>Follow below step to install WSL</p>
+            <ul>
+                <li>Open start menu or click <kbd>ctrl</kbd> + <kbd>s</kbd></li>
+                <li>Search 'Turn windows feature on and off' and click open</li>
+                <li>Select 'Windows Subsystem for Linux' and 'Virtual Machine Platform' from the menu</li>
+                <li>Click `Ok`</li>
+                <li>It may require a restart to apply changes</li>
+            </ul>
+            <p>Half way done!</p>
+            <ul>
+                <li>Now, Open 'Microsoft Store' and search for your favorite distribution (current only few distribution support WSL)</li>
+                <li>I recommend using Ubuntu as canonical collaborated with Microsoft to create WSL</li>
+                <li>Click install</li>
+                <li>Then launch the distribution from 'Microsoft Store' or search on windows start menu</li>
+                <li>follow prompt and that it!</li>
+            </ul>
+        </section>
+
+        <section class="memory-management article">
+            <h2>CLI setup</h2>
+            <p>Alternatively you can use powershell or terminal to setup WSL</p>
+            <ul>
+                <li>Open `powershell` in administrator mode</li>
+                <li>Run below commands:</li>
+                <li><code>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</code></li>
+                <li><code>Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform</code></li>
+                <li>Restart your computer</li>
+            </ul>
+            <p>that it! Further process is same as GUI</p>
+            <ul>
+                <li>Now, Open 'Microsoft Store' and search for your favorite distribution (current only few distribution support WSL)</li>
+                <li>I recommend using Ubuntu as canonical collaborated with Microsoft to create WSL</li>
+                <li>Click install</li>
+                <li>Then launch the distribution from 'Microsoft Store' or search on windows start menu</li>
+                <li>follow prompt and that it!</li>
+            </ul>
+        </section>
+
+                        <div class="return-home">
+            <a href="/codegrive" class="home-button"><img src="/codegrive/assets/svg/home_icon.svg" alt="home"></a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.youtube.com/@codegrive"> <img src="/codegrive/assets/svg/youtube.svg" alt="youtube" height="20px"
+                    width="90px"></a>
+            <a href="https://twitter.com/codegrive"> <img src="/codegrive/assets/svg/x.svg" alt="twitter"></a>
+            <a href="https://github.com/shanithecoder"><img src="/codegrive/assets/svg/github.svg" alt="github"></a>
+        
+        </div>
+    </footer>
+</body>
+  
+
+</html>
